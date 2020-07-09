@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/bootstrap.css">
+        <style>
+            .div1{
+                font-size: 50px;
+                margin: 1% 0% 0% 0%;
+            }
+            .center-align{
+                text-align: center;
+            }
+            .right-icon{
+                float: right;
+            }
+            .left-icon{
+                float: left;
+            }
+            .image-class{
+                width:100%;
+                height:80%;
+            }
+
+            .overlay-image {
+                position: relative;
+                width: 100%;
+            }
+
+            .overlay-image .image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            /* .overlay-image .text:hover{
+                opacity: 0.5;
+                background:gray;
+            } */
+            .overlay-image .text {
+                color: #fff;
+                font-size: 30px;
+                line-height: 1.5em;
+                text-shadow: 2px 2px 2px #000;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+            }
+
+            .right-align{
+                text-align: right   ;
+            }
+            .rectangle{
+                margin:30%;
+                width:40%;
+                height:170px;
+                border: 3px solid yellow;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class = "row div1">
+                <div class="col-sm-12">
+                    <p class = "center-align" >
+                        Header 
+                        <i class="glyphicon glyphicon-home left-icon"></i>
+                        <i class="glyphicon glyphicon-user right-icon"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="overlay-image">
+                        <img class="image" src="assets/banner.jpg" alt="Alt text" />
+                        <div class="text">
+                            <div class="rectangle">This is a overlay rectangle! Contains main content.
+                                Wish you a good day. Thank You..!!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row div1">
+                <div class="col-sm-12 right-align"    >
+                    <h3>Copyright 30 Jun 2020</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
